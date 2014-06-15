@@ -21,7 +21,7 @@ class SiteController extends Controller
 	public function behaviors() {
 		return array(
 			'access' => array(
-				'class' => \yii\web\AccessControl::className(),
+				'class' => \yii\filters\AccessControl::className(),
 				'only' => array('login'),
 				'rules' => array(
 					array(
